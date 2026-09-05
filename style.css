@@ -4,7 +4,7 @@ body {
     font-family: system-ui, sans-serif;
     margin: 0px;
     padding: 0px;
-
+    
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     padding: 20px 5px;
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 header img {
@@ -21,17 +21,19 @@ header img {
     text-align: center;
     padding: 20px;
     height: 24px;
-    
+
 }
 
-header-a{
+header a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-header-div {
 
-   display: flex;
-   gap: 10px;
+}
+
+
+header div {
+    display: flex;
+    gap: 10px;
 }
 
 .card {
@@ -60,5 +62,6 @@ header-div {
     display: flex;
     gap: 10px;
     flex-direction: column;
-    
+
 }
+
