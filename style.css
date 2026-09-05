@@ -33,3 +33,32 @@ header-div {
    display: flex;
    gap: 10px;
 }
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.datas .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h2 {
+    margin: 0px;
+    font-size: 20px;
+}
+
+
+.card p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.datas {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+}
