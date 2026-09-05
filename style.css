@@ -1,0 +1,35 @@
+
+body {
+    background-color: rgb(221, 219, 219);
+    font-family: system-ui, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header {
+    background-color: rgb(9, 44, 160);
+    margin-bottom: 20px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+header img {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    height: 24px;
+    
+}
+
+header-a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+header-div {
+
+   display: flex;
+   gap: 10px;
+}
