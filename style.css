@@ -1,67 +1,169 @@
-
-body {
-    background-color: rgb(221, 219, 219);
-    font-family: system-ui, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    
+:root{
+  --bg: #EFEDE6;
+  --paper: #FFFFFF;
+  --ink: #232320;
+  --ink-soft: #6b6a63;
+  --accent: #2F6F5E;
+  --accent-dark: #234F42;
+  --line: #D8D4C8;
 }
 
-header {
-    background-color: rgb(9, 44, 160);
-    margin-bottom: 20px;
-    padding: 20px 5px;
-    display: flex;
-    justify-content: space-between;
+*{ box-sizing: border-box; }
 
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
 }
 
-header img {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px;
-    height: 24px;
-
+/* ---------- Header ---------- */
+header{
+  background: var(--accent-dark);
+  color: #fff;
+  padding: 28px 20px;
+  text-align: center;
 }
 
-header a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-
+header h1{
+  margin: 0;
+  font-size: 26px;
 }
 
-
-header div {
-    display: flex;
-    gap: 10px;
+header h2{
+  margin: 8px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #D9E4DF;
 }
 
-.card {
-    background: rgb(255, 255, 255);
-    padding: 20px;
+/* ---------- Main / layout ---------- */
+main{
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 0 20px 40px;
 }
 
-.datas .card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+main > h2{
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.card h2 {
-    margin: 0px;
-    font-size: 20px;
+/* ---------- Foto ---------- */
+figure{
+  margin: 0 0 24px;
+  text-align: center;
 }
 
-
-.card p {
-    margin: 0px;
-    font-size: 14px;
+figure img{
+  border-radius: 8px;
+  border: 1px solid var(--line);
 }
 
-.datas {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-
+figure figcaption{
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--ink-soft);
 }
 
+/* ---------- Form container ---------- */
+form{
+  background: var(--paper);
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid var(--line);
+}
+
+.label{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* ---------- Inputs ---------- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea{
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* ---------- Fieldsets (sexo / interesses) ---------- */
+fieldset{
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px 14px;
+  margin: 14px 0;
+}
+
+legend{
+  padding: 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+fieldset label{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 16px;
+  font-size: 14.5px;
+}
+
+/* ---------- Botão ---------- */
+button[type="submit"]{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  background: var(--accent-dark);
+}
+
+/* ---------- Bloco de mídia (foto + vídeo + áudio) ---------- */
+.midia{
+  text-align: center;
+}
+
+.midia-linha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+video, audio{
+  border-radius: 6px;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 480px){
+  form{ padding: 18px 16px; }
+  fieldset label{ margin-right: 10px; }
+}
